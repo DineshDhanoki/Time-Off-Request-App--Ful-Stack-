@@ -1,0 +1,19 @@
+{
+  "name": "time-off-request-app",
+  "version": "1.0.0",
+  "description": "Time-off request application with React frontend, Node.js backend and FileMaker integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": ["react", "node", "filemaker", "time-off"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

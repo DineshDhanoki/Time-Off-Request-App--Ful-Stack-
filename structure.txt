@@ -1,0 +1,75 @@
+time-off-request-app/
+├── client/                          # React frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   ├── src/
+│   │   ├── components/              # UI components
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── EmployeeView.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── ManagerView.jsx
+│   │   │   ├── Navigation.jsx
+│   │   │   ├── Notification.jsx
+│   │   │   ├── RequestForm.jsx
+│   │   │   ├── RequestList.jsx
+│   │   │   ├── RequestDetails.jsx
+│   │   │   └── ThemeToggle.jsx
+│   │   ├── context/                 # React contexts
+│   │   │   ├── AuthContext.jsx
+│   │   │   ├── NotificationContext.jsx
+│   │   │   └── ThemeContext.jsx
+│   │   ├── hooks/                   # Custom hooks
+│   │   │   ├── useAuth.js
+│   │   │   ├── useNotification.js
+│   │   │   └── useWebSocket.js
+│   │   ├── services/                # API services
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   └── requestService.js
+│   │   ├── styles/                  # CSS/styling
+│   │   │   ├── index.css
+│   │   │   ├── theme.js
+│   │   │   └── components/
+│   │   ├── utils/                   # Utility functions
+│   │   │   ├── dateUtils.js
+│   │   │   └── formatters.js
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   └── setupProxy.js
+│   ├── package.json
+│   └── README.md
+├── server/                          # Node.js backend
+│   ├── config/                      # Configuration
+│   │   ├── db.js                    # FileMaker connection
+│   │   └── config.js                # Environment variables
+│   ├── controllers/                 # Route controllers
+│   │   ├── authController.js
+│   │   ├── requestController.js
+│   │   └── userController.js
+│   ├── middleware/                  # Middleware functions
+│   │   ├── auth.js
+│   │   ├── error.js
+│   │   └── logger.js
+│   ├── models/                      # Data models
+│   │   ├── Request.js
+│   │   └── User.js
+│   ├── routes/                      # API routes
+│   │   ├── authRoutes.js
+│   │   ├── requestRoutes.js
+│   │   └── userRoutes.js
+│   ├── services/                    # Business logic
+│   │   ├── filemakert.js            # FileMaker API wrapper
+│   │   ├── hrmsService.js           # HRMS integration
+│   │   └── notificationService.js   # Websocket & notifications
+│   ├── utils/                       # Utility functions
+│   │   ├── asyncHandler.js
+│   │   └── filemaker.js             # FileMaker helper functions
+│   ├── app.js                       # Express app setup
+│   ├── server.js                    # Server entry point
+│   ├── package.json
+│   └── README.md
+├── .gitignore
+├── package.json
+└── README.md
