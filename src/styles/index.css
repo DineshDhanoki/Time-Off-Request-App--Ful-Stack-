@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.page-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.request-card {
+  margin-bottom: 16px;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
