@@ -1,23 +1,19 @@
 {
-  "name": "time-off-request-app-server",
+  "name": "time-off-request-app",
   "version": "1.0.0",
-  "description": "Backend for time-off request application",
-  "main": "server.js",
+  "description": "Time-off request application with React frontend, Node.js backend and FileMaker integration",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "dependencies": {
-    "axios": "^1.9.0",
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "socket.io": "^4.8.1",
-    "uuid": "^9.0.1"
-  },
+  "keywords": ["react", "node", "filemaker", "time-off"],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "concurrently": "^7.6.0"
   }
 }
